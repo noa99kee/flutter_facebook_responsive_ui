@@ -21,8 +21,10 @@ class CustomAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double statusBarHeight = MediaQuery.of(context).padding.top;
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+      //padding: const EdgeInsets.symmetric(horizontal: 20.0),
+      padding: EdgeInsets.fromLTRB(20.0, statusBarHeight, 20.0, 0.0),
       height: 65.0,
       decoration: BoxDecoration(
         color: Colors.white,
